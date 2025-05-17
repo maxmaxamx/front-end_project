@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <title>Web development project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">Your logo</a>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Servicing</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact us</a></li>
+                <li>
+                    <a href="" onclick="toggleSearch(event)">
+                        <img src="./images/search.png" alt="">
+                    </a> 
+                    <div class="search" id="search-box">
+                        <input type="text" name="search" id="search" placeholder="Введите поисковой запрос" onclick="event.stopPropagation()">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="main-banner">
+        <h3>Web development project</h3>
+        <p>Very suitable to support all web development projects</p>
+        <div class="button-container">
+            <button>our services</button>
+            <button>hire is now</button>
+        </div>
+        <img src="./images/arrow_down.png" alt="">
+    </section>
+    <section class="about-us">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="div-container">
+            <div class="block">
+                <div class="img-holder">
+                    <img src="./images/internet.png" alt="">
+                </div>
+                <h1>Awesome Icons</h1>
+                <p>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing elit, sed do<br> eiusmod tempor</p>
+            </div>
+            <div class="block">
+                <div class="img-holder">
+                    <img src="./images/transfer.png" alt="">
+                </div>
+                <h1>One Page</h1>
+                <p>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing elit, sed do<br> eiusmod tempor</p>
+            </div>
+            <div class="block">
+                <div class="img-holder">
+                    <img src="./images/head.png" alt="">
+                </div>
+                <h1>Fully Responsive</h1>
+                <p>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing elit, sed do<br> eiusmod tempor</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services">
+        
+    </section>
+
+    <script src="./js/custom.js"></script>
+</body>
+</html>
