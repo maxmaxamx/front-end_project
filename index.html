@@ -15,58 +15,64 @@
 
 
     <title>Web development project</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/owl.carousel.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="/" class="logo">Your logo</a>
+            <a href="/" class="logo">Your Logo</a>
             <ul class="menu">
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Servicing</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="./index.html#about-us">About</a></li>
+                <li><a href="./index.html#our-services">Servicing</a></li>
+                <li><a href="./index.html#last-works">Portfolio</a></li>
+                <li><a href="./index.html#blog">Blog</a></li>
+                <li><a href="./index.html#contact">Contact us</a></li>
                 <li>
                     <a href="" onclick="toggleSearch(event)">
                         <img src="./images/search.png" alt="">
-                    </a> 
+                    </a>
                     <div class="search" id="search-box">
-                        <input type="text" name="search" id="search" placeholder="Введите поисковой запрос" onclick="event.stopPropagation()">
+                        <input type="text" name="search" id="search" placeholder="Введите запрос" onclick="event.stopPropagation()">
                     </div>
                 </li>
             </ul>
         </div>
     </header>
     <section class="main-banner">
-        <h3>Web development project</h3>
-        <p>Very suitable to support all web development projects</p>
-        <div class="button-container">
-            <button>our services</button>
-            <button>hire is now</button>
+        <div class="container">
+            <h1 data-aos="zoom-in"  data-aos-duration="1500">Web development project</h1>
+            <p data-aos="fade-up"  data-aos-duration="1500">Very suitable to support all web development projects</p>
+            <div class="banner-buttons">
+                <button class="button" data-aos="fade-right" data-aos-duration="1500">Our services</button>
+                <button class="button button_green" data-aos="fade-left" data-aos-duration="1500">Hire is now</button>
+            </div>
+            <button class="arrow"></button>
         </div>
-        <img src="./images/arrow_down.png" alt="">
     </section>
-    <section class="about-us">
-        <h1>About Us</h1>
+    <section id="about-us">
+        <h1 class="Big">About Us</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="div-container">
-            <div class="block">
+            <div class="block" data-aos="fade-down"  data-aos-duration="1500">
                 <div class="img-holder">
                     <img src="./images/internet.png" alt="">
                 </div>
                 <h1>Awesome Icons</h1>
                 <p>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing elit, sed do<br> eiusmod tempor</p>
             </div>
-            <div class="block">
+            <div class="block" data-aos="fade-down"  data-aos-duration="1500"  data-aos-delay="300">
                 <div class="img-holder">
                     <img src="./images/transfer.png" alt="">
                 </div>
                 <h1>One Page</h1>
                 <p>Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing elit, sed do<br> eiusmod tempor</p>
             </div>
-            <div class="block">
+            <div class="block" data-aos="fade-down"  data-aos-duration="1500"  data-aos-delay="600">
                 <div class="img-holder">
                     <img src="./images/head.png" alt="">
                 </div>
@@ -76,10 +82,254 @@
         </div>
     </section>
 
-    <section class="our-services">
-        
+    <section id="our-services">
+        <h1>Our Services</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="grid-div">
+            <div class="service" data-aos="fade-right" data-aos-duration="700">
+                <img src="./images/smartphone_dark.png" class="phone" alt="">
+                <h1 class="hed">Research</h1>
+                <p class="ser">At vero eos et accusamus et iusto<br> odio dignissimos ducimus qui blan-<br>ditiis praesentium voluptatum iti<br> atque corrupti quos.</p>
+                <button class="more">read more</button>
+            </div>
+            <div class="service" data-aos-duration="700" data-aos="fade-down">
+                <img src="./images/smartphone_dark.png" class="phone" alt="">
+                <h1 class="hed">Portfolio</h1>
+                <p class="ser">At vero eos et accusamus et iusto<br> odio dignissimos ducimus qui blan-<br>ditiis praesentium voluptatum iti<br> atque corrupti quos.</p>
+                <button class="more">read more</button>
+            </div>
+            <div class="service" data-aos="fade-left" data-aos-duration="700">
+                <img src="./images/smartphone_dark.png" class="phone" alt="">
+                <h1 class="hed">Support</h1>
+                <p class="ser">At vero eos et accusamus et iusto<br> odio dignissimos ducimus qui blan-<br>ditiis praesentium voluptatum iti<br> atque corrupti quos.</p>
+                <button class="more">read more</button>
+            </div>
+            <div class="service" data-aos="fade-right" data-aos-duration="700">
+                <img src="./images/smartphone_dark.png" class="phone" alt="">
+                <h1 class="hed">Documentation</h1>
+                <p class="ser">At vero eos et accusamus et iusto<br> odio dignissimos ducimus qui blan-<br>ditiis praesentium voluptatum iti<br> atque corrupti quos.</p>
+                <button class="more">read more</button>
+            </div>
+            <div class="service" data-aos-duration="700" data-aos="fade-up">
+                <img src="./images/smartphone_dark.png" class="phone" alt="">
+                <h1 class="hed">Development</h1>
+                <p class="ser">At vero eos et accusamus et iusto<br> odio dignissimos ducimus qui blan-<br>ditiis praesentium voluptatum iti<br> atque corrupti quos.</p>
+                <button class="more">read more</button>
+            </div>
+            <div class="service" data-aos="fade-left" data-aos-duration="700">
+                <img src="./images/smartphone_dark.png" class="phone" alt="">
+                <h1 class="hed">Design</h1>
+                <p class="ser">At vero eos et accusamus et iusto<br> odio dignissimos ducimus qui blan-<br>ditiis praesentium voluptatum iti<br> atque corrupti quos.</p>
+                <button class="more">read more</button>
+            </div>
+        </div>
     </section>
 
+    <section id="last-works">
+        <h1>Latest Works</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="container-filt">
+            <button class="filt">all</button>
+            <button class="filt">web design</button>
+            <button class="filt">ux/ui design</button>
+            <button class="filt">mockups</button>
+        </div>
+        <div class="grid-div">
+            <div class="work-img">
+                <img src="./images/watches.jpg" alt="">\
+                <div class="overlay">
+                    <h1>Hand Watch</h1>
+                    <p>ui/ux design</p>
+                </div>
+            </div>
+            <div class="work-img">
+                <img src="./images/one.jpg" alt="">
+                <div class="overlay">
+                    <h1>Hand Watch</h1>
+                    <p>ui/ux design</p>
+                </div>
+            </div>
+            <div class="work-img">
+                <img src="./images/tshirt.jpg" alt="">
+                <div class="overlay">
+                    <h1>Hand Watch</h1>
+                    <p>ui/ux design</p>
+                </div>
+            </div>
+            <div class="work-img">
+                <img src="./images/drink.jpg" alt="">
+                <div class="overlay">
+                    <h1>Hand Watch</h1>
+                    <p>ui/ux design</p>
+                </div>
+            </div>
+            <div class="work-img">
+                <img src="./images/vino.jpg" alt="">
+                <div class="overlay">
+                    <h1>Hand Watch</h1>
+                    <p>ui/ux design</p>
+                </div>
+            </div>
+            <div class="work-img">
+                <img src="./images/bag.jpg" alt="">
+                <div class="overlay">
+                    <h1>Hand Watch</h1>
+                    <p>ui/ux design</p>
+                </div>
+            </div>
+        </div>
+        <button class="view">view all</button>
+    </section>
+
+    <section class="pricing-section" id="pricing-section">
+        <h3>Pricing Plan</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="pricings">
+            <div class="pricing" data-aos="flip-right">
+                <div class="priсing-header">
+                    <h3>Free Trail</h3>
+                    <p><span>$00</span> <small>per month</small></p>
+                </div>
+                <ul>
+                    <li>30 Free Trail</li>
+                    <li>5 Free Projects</li>
+                    <li>PHP 5 Enabled</li>
+                    <li>24/7 Supports</li>
+                </ul>
+                <button class="pricing-btn">Order Now</button>
+                </div>
+            <div class="pricing" data-aos="flip-left" data-aos-delay="300">
+                    <div class="priсing-header">
+                    <h3>Basic</h3>
+                    <p><span><sup>$</sup>50</span> <small>per month</small></p>
+                </div>
+                <ul>
+                    <li>30 Free Trail</li>
+                    <li>5 Free Projects</li>
+                    <li>PHP 5 Enabled</li>
+                    <li>24/7 Supports</li>
+                </ul>
+                <button class="pricing-btn active">Order Now</button>
+            </div>
+            <div class="pricing" data-aos="flip-left" data-aos-delay="600">
+                <div class="priсing-header">
+                    <h3>Ultimates</h3>
+                    <p><span>$99</span> <small>per month</small></p>
+                </div>
+                <ul>
+                    <li>30 Free Trail</li>
+                    <li>5 Free Projects</li>
+                    <li>PHP 5 Enabled</li>
+                    <li>24/7 Supports</li>
+                </ul>
+                <button class="pricing-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="photo">
+        <h1>Latest Works</h1>
+        <p class="phot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="owl-carousel owl-theme card-block ">
+            <div class="card slide">
+                <img src="./images/coder_1.jpg" alt="" class="pers">
+                <h3>John Doe</h3>
+                <p>General Manager</p>
+                <div class="socials">
+                    <div class="media"><img src="./images/facebook.png" alt=""></div>
+                    <div class="media"><img src="./images/twitter.png" alt=""></div>
+                    <div class="media"><img src="./images/message.png" alt=""></div>
+                    <div class="media"><img src="./images/basket.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card slide">
+                <img src="./images/coder_2.jpg" alt="" class="pers">
+                <h3>Alexa Biru</h3>
+                <p>Office Director</p>
+                <div class="socials">
+                    <div class="media"><img src="./images/facebook.png" alt=""></div>
+                    <div class="media"><img src="./images/twitter.png" alt=""></div>
+                    <div class="media"><img src="./images/message.png" alt=""></div>
+                    <div class="media"><img src="./images/basket.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card slide">
+                <img src="./images/coder_3.jpg" alt="" class="pers">
+                <h3>Ronobir sing</h3>
+                <p>Admin</p>
+                <div class="socials">
+                    <div class="media"><img src="./images/facebook.png" alt=""></div>
+                    <div class="media"><img src="./images/twitter.png" alt=""></div>
+                    <div class="media"><img src="./images/message.png" alt=""></div>
+                    <div class="media"><img src="./images/basket.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h1 class="Big">Blog</h1>
+        <p class="phot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="blogs">
+        </div>
+        <button class="view" onclick="viewMore()">more view</button>
+
+    </section>
+
+    <footer id="contact">
+        <h1 class="Big">Contact Us</h1>
+        <p class="phot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div id="contacts">
+            <div class="sect">
+                <div class="circle"><img src="./images/geo.png" alt=""></div>
+                <p>Nobinagar savar,Dhaka Ban-<br>gladesh</p>
+            </div>
+            <div class="sect">
+                <div class="circle"><img src="./images/phone.png" alt=""></div>
+                <p>+8801743331996</p>
+                <p>+8801928737807</p>
+            </div>
+            <div class="sect">
+                <div class="circle"><img src="./images/mail.png" alt=""></div>
+                <p>quickmasud@gmail.com</p>
+                <p>quickmasud@yahoo.com</p>
+            </div>
+        </div>
+
+        <div class="forms">
+            <div class="col">
+                <input type="text" placeholder="Your NAME">
+                <input type="email" placeholder="Your Email">
+            </div>
+            <input type="text" placeholder="Write message" id="inp">
+            <button id="white-button">send</button>
+        </div>
+
+        <div class="copyright">
+            <p>All rights Reserved &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- <script src="./js/owl.carousel.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/blog.js"></script>
     <script src="./js/custom.js"></script>
+    <script>
+
+        $('.owl-carousel').owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 30,
+            nav: false,
+            dots: true,
+            dotsEach: 1,
+            autoplay: false
+        });
+
+    </script>
+        
 </body>
 </html>
